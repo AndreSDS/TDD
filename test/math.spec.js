@@ -4,6 +4,8 @@ const expect = require ('chai');
 const sinon = require ('sinon');
 
 let val = 0;
+//uso da  palavra function é intencional
+//pois o this n funciona bem em arrowfunctions
 
 describe('math class', function(){
     //hooks

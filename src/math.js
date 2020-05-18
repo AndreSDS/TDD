@@ -1,4 +1,5 @@
 class Math{
+    
     soma(a,b, callback){
         setTimeout(()=>{
             callback(a + b);
@@ -10,5 +11,6 @@ class Math{
     printSoma(req, res, a , b){
         res.load('index', a + b);
     };
+
 };
 module.exports = Math;
