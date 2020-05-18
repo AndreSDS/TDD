@@ -1,5 +1,7 @@
-const assert = require('assert');
+//const assert = require('assert');
 const Math = require('../src/math.js');
+const expect = require ('chai');
+const sinon = require ('sinon');
 
 let val = 0;
 
@@ -15,7 +17,7 @@ describe('math class', function(){
 
         val = 3;
         math.soma(val,5,(val)=>{
-            assert.equal(val,8);
+            expect(val).to.equal(8);
             done();
         });
     });
@@ -24,6 +26,16 @@ describe('math class', function(){
         const math = new Math();
 
         val = 4;
-        assert.equal(math.multiplica(val,3), 12);
+        expect(math.multiplica(val,5)).to.equal(20)
+    });
+
+    it.only('Chama o req da função soma com index e valores', function(){
+        const req = {};
+        const res = {
+            load: sinon.spy()
+        };
+        const math = new Math();
+        math.printSoma(req, res, 5,5);
+
     });
 });

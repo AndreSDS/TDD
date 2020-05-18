@@ -1,7 +1,14 @@
 # TDD
-Testes unitário com [mocha](http://mochajs.org "mocha"). Ferramenta para testes automatizados.
+Primeiro contato com testes, utilizando 
+[Mocha](http://mochajs.org "Mocha"), ferramenta para testes unitários automatizados.
+
+[Chai]("https://www.chaijs.com chai"), biblioteca para melhorar a legibilidade e expressividade, das decrições em testes unitários.
+
+[Sinon]("https://sinonjs.org sinon"), biblioteca com funções para monitorar, mockar e esboçar comportamentos em testes unitários.
 
 ## Tecnologias usadas
 -[NPM](http://www.npmjs.com "NPM")
--[NodeJs](http://nodejs.org/pt-br/ "NodeJs")
--[Mocha](http://mochajs.org "mocha")
+-[NodeJs](http://nodejs.org "NodeJs")
+-[Mocha](http://mochajs.org "Mocha")
+-[Chai](https://www.chaijs.com "Chai")
+-[Sinon](https://sinonjs.org "Sinon")

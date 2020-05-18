@@ -6,5 +6,9 @@ class Math{
         };
     
     multiplica = (a,b) => a * b;
+
+    printSoma(req, res, a , b){
+        res.load('index', a + b);
+    };
 };
 module.exports = Math;
